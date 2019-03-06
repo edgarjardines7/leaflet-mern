@@ -24,7 +24,21 @@ https://react-leaflet.js.org/docs/en/intro.html
 
 
 
-[]Install react-leaflet: https://github.com/PaulLeCam/react-leaflet
+[x]Install react-leaflet: https://github.com/PaulLeCam/react-leaflet
+*     Instalar emojisense 
+    * Descargar emojisense en visual studio code
+    * settings>Extensions>:emojisense:   > Edit in settings.json 
+"emojisense.languages": {
+    "markdown": true,
+    "git-commit": false,
+    "plaintext": false,
+    "json": true,
+    "javascript": true
+  },
+"javascript.validate.enable": false
+* npm install leaflet
+    * import 'leaflet/dist/leaflet.css'
+*  npm install react-leaflet
 
 
 
