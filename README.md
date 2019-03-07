@@ -42,8 +42,39 @@ https://react-leaflet.js.org/docs/en/intro.html
 
 
 
-[]Get a map on the page!
+[x]Get a map on the page!
+*     https://react-leaflet.js.org/docs/en/examples.html > A simple Marker with Popup
+* npm start
 
+
+Con estos paquetes no se muestra el mapa correctamente 
+// {
+//   "name": "client",
+//   "version": "0.1.0",
+//   "private": true,
+//   "dependencies": {
+//     "leaflet": "^1.3.4",
+//     "react": "^16.8.4",
+//     "react-dom": "^16.8.4",
+//     "react-leaflet": "^2.1.2",
+//     "react-scripts": "2.1.5"
+//   },
+//   "scripts": {
+//     "start": "react-scripts start",
+//     "build": "react-scripts build",
+//     "test": "react-scripts test",
+//     "eject": "react-scripts eject"
+//   },
+//   "eslintConfig": {
+//     "extends": "react-app"
+//   },
+//   "browserslist": [
+//     ">0.2%",
+//     "not dead",
+//     "not ie <= 11",
+//     "not op_mini all"
+//   ]
+// }
 
 
 []Get the users location 
