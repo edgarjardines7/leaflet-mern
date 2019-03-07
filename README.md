@@ -77,10 +77,11 @@ Con estos paquetes no se muestra el mapa correctamente
 // }
 
 
-[]Get the users location 
+[x]Get the users location 
     [x] with the browser
             https://developer.mozilla.org/es/docs/WebAPI/Using_geolocation
-    []with their IP using an API 
+    [x]with their IP using an API 
+            https://ipapi.co/json Obtiene mis datos georaficos a partir de mi ip publica
 
 
 

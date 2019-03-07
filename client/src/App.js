@@ -17,6 +17,7 @@ class App extends Component {
       lat: 51.505,
       lng: -0.09,
     },
+    haveUsersLocation: false,
     zoom: 13,
   }
 
@@ -27,9 +28,26 @@ class App extends Component {
           lat:position.coords.latitude,
           lng:position.coords.longitude
         },
+        haveUsersLocation: true,
         zoom: 13,
       })
       console.log(position)  
+    },() =>{
+      console.log('uh oh ... they didnt give us their location');
+      fetch('https://ipapi.co/json')
+      .then(res => res.json())
+      .then(location =>{
+
+        console.log(location);
+        this.setState({
+          location:{
+            lat:location.latitude,
+            lng:location. longitude
+          },
+          haveUsersLocation: true,
+          zoom: 13,
+        })
+      })
     });
   }
   render() {
@@ -37,18 +55,20 @@ class App extends Component {
 
     return (
       <Map className="map" center={position} zoom={this.state.zoom}>
-        <TileLayer
+      <TileLayer
         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-         <Marker 
-        position={position}
-        icon={myIcon}
-        >
+        {this.state.haveUsersLocation ? 
+          <Marker 
+          position={position}
+          icon={myIcon}
+          >
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
-        </Marker>
+        </Marker> : ''
+        }
     </Map>
     );
   }
