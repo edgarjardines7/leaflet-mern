@@ -78,7 +78,8 @@ Con estos paquetes no se muestra el mapa correctamente
 
 
 []Get the users location 
-    [] with the browser
+    [x] with the browser
+            https://developer.mozilla.org/es/docs/WebAPI/Using_geolocation
     []with their IP using an API 
 
 
