@@ -99,7 +99,10 @@ Con estos paquetes no se muestra el mapa correctamente
 
 
 []Add monk and joi 
-
+    * monk : Una pequeña capa que proporciona mejoras de uso simples pero sustanciales para el uso de MongoDB dentro de Node.JS.
+    * joi : Lenguaje de descripción de esquemas de objetos y validador para objetos JavaScript.
+        brew install mongodb
+        brew services start mongo
 
 
 []POST / messages 
