@@ -94,8 +94,8 @@ Con estos paquetes no se muestra el mapa correctamente
 
 
 
-[]Setup server with create express-api: https://www.npmjs.com/package/create-express-api
-
+[x]Setup server with create express-api: https://www.npmjs.com/package/create-express-api
+    npx create-express-api server
 
 
 []Add monk and joi 
