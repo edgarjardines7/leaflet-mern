@@ -85,11 +85,11 @@ Con estos paquetes no se muestra el mapa correctamente
 
 
 
-[]Show a pin at the users location 
+[x]Show a pin at the users location 
 
 
 
-[]Show a form to submit a message 
+[x]Show a form to submit a message 
 *when form is submitted - POST / message 
 
 
